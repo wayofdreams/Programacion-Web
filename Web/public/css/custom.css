@@ -1,3 +1,40 @@
+.topbar ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+.topbar ul>li{
+	float: left;
+}
+.topbar ul>li.right{
+	float: right;
+}
+.topbar li>a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
+	text-decoration: none;
+}
+.topbar ul>li>a:hover:not(.active){
+	background-color: #111;
+}
+.active {
+	background-color: #4CAF50;
+}
+@media screen and (max-width:600px){
+	.topbar ul>li{
+		float: none;
+	}
+	.topbar ul>li.right{
+		float: none;
+	}
+}
 body{
 	color: red;
 }
