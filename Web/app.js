@@ -24,4 +24,8 @@ app.get('/about', function (req, res) {
     res.render('about');
 });
 
+app.get('/domtree', function (req, res) {
+    res.render('treetest');
+});
+
 app.listen(5884);
