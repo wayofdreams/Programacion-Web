@@ -37,7 +37,7 @@
 }
 
 .footer {
-	position: absolute;
+	position: bottom;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -84,7 +84,71 @@
 		float: none;
 	}
 }
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+		text-align: center;
+}
 
+.td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
 body{
-	color: blue;
+	color: black;
+}
+
+.auto-style1 {
+	text-align: right;
+}
+.auto-style2 {
+	text-align: center;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.auto-style3 {
+	background-image: url('../images/sky.png');
+}
+.auto-style4 {
+	background-color: #000066;
+}
+.auto-style5 {
+	background-color: #0066CC;
+}
+.auto-style6 {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.auto-style7 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #808080;
+}
+.auto-style8 {
+	color: #FFFFFF;
+}
+.auto-style9 {
+	text-align: left;
+}
+.auto-style10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+}
+.auto-style11 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
 }
