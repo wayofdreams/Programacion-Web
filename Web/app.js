@@ -20,8 +20,8 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.get('/asignacion5', function (req, res) {
-    res.render('asignacion5');
+app.get('/tabletest', function (req, res) {
+    res.render('tabletest');
 });
 
 app.get('/about', function (req, res) {

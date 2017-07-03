@@ -110,6 +110,7 @@ body{
 	color: black;
 }
 
+/* About */
 .auto-style1 {
 	text-align: right;
 }
@@ -184,7 +185,7 @@ body{
   background-color: #F44336;
 }
 
-.xhead, .xbody {
+.xhead, .xbody, .header {
   background-color: #E91E63;
 }
 .xul {
