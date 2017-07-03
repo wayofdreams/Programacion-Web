@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   var treeContainer = document.getElementById('treeContainer');
-  var cnt = 1;
+  var counter = 1;
   bfs(document);
   function bfs(root) {
     var queue = [];
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var ul = document.createElement('ul');
     var span = document.createElement('span');
 
-    var id = "container" + cnt++;
+    var id = "container" + counter++;
     ul.className = "node-container";
     span.className = 'x' + name.toLowerCase();
     ul.setAttribute("id", id);
@@ -54,13 +54,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
         li.appendChild(ul);
         container.appendChild(li);
     }
-    // if(isRoot) {
-    //   container.appendChild(span);
-    // } else {
-    //   var li = document.createElement('li');
-    //   li.appendChild(span);
-    //   container.appendChild(li);
-    // }
     return id;
   }
   
