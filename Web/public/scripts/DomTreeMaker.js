@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     while(queue.length != 0) {
       var l = queue.shift();
-      console.log(l.tagName);
       container = document.getElementById(l.containerId);
       if(l.childElementCount == 0)
         addLeaf(container, l);
