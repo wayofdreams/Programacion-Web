@@ -1,0 +1,26 @@
+.thumbnail > img {
+  height: 200px;
+  width: 100%;
+  display: block;
+}
+
+td > .btn {
+  margin-right: 8px;
+}
+
+.topping {
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+#topping-container {
+  padding: 8px 0px;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}

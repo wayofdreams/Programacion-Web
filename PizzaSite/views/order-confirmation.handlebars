@@ -1,0 +1,44 @@
+<div>
+    <h1>Order Confirmation</h1>
+    <h3>Your Pizza</h3>
+
+    <table class="table table-striped">
+        <tr>
+            <th>Description</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Size</td>
+            <td id="order-size">{{order.size}}</td>
+        </tr>
+        <tr>
+            <td>Crust</td>
+            <td id="order-crust">{{order.crust}}</td>
+        </tr>
+        <tr>
+            <td>Sauce</td>
+            <td id="order-sauce">{{order.sauce}}</td>
+        </tr>
+        <tr>
+            <td>Cheese</td>
+            <td id="order-cheese">{{order.cheese}}</td>
+        </tr>
+        <tr>
+            <td>Toppings</td>
+            <td id="order-toppings">{{order.toppings}}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Total Price</strong></td>
+            <td >$<span id="order-price">{{order.price}}</span></td>
+        </tr>
+    </table>
+
+    <button id="btn-cancel" class="btn btn-danger">Cancel</button>
+    <button id="btn-confirm" class="btn btn-primary">Confirm</button>
+
+</div>
+<script src="/static/js/order-confirmation.controller.js"></script>

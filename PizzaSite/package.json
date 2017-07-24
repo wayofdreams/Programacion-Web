@@ -1,0 +1,22 @@
+{
+  "name": "practica2",
+  "version": "1.0.0",
+  "description": "Web Programming Assignment 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Medina",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.11.1",
+    "nodemailer": "^4.0.1"
+  }
+}
