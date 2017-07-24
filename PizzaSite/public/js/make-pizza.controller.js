@@ -26,7 +26,7 @@
             getIngredients('topping');
 
             function getIngredients(type) {
-                var url = "/api";
+                var url = "api";
                 switch (type) {
                     case 'crust':
                         url += "/crusts";

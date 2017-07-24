@@ -14,7 +14,7 @@
         var form  = document.getElementById('reorder-form');
         var orders = [];
 
-        Ajax.get('/api/orders', {
+        Ajax.get('api/orders', {
             email: email
         }, function(orders) {
             if (!orders.error) {
@@ -80,7 +80,7 @@
 
             function onCancelOrder() {
               var orderId = order._id;
-              Ajax.delete('/api/orders/' + orderId, function(response) {
+              Ajax.delete('api/orders/' + orderId, function(response) {
                 if(response.error) {
                   // TODO: handle onCancelOrder error
                 } else {

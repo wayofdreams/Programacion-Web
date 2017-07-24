@@ -25,7 +25,7 @@
             };
 
 
-            Ajax.post('/api/signup', newUser, function(response) {
+            Ajax.post('api/signup', newUser, function(response) {
                 if (response.success == "success") {
                     var user = response.user;
 

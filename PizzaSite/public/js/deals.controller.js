@@ -6,7 +6,7 @@
     // TODO: Remove this
     console.log("Deals Controller loaded!");
     var grid = document.getElementById('deals-grid');
-    Ajax.get('/api/offers', {}, function(offers) {
+    Ajax.get('api/offers', {}, function(offers) {
         if (!offers.error) {
             for (var idx in offers) {
                 buildOffer(grid, offers[idx]);

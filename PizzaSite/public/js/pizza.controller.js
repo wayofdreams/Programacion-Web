@@ -4,7 +4,7 @@
     document.addEventListener("DOMContentLoaded", function(event) {
 
         var pizzaGrid = document.getElementById('pizza-grid');
-        Ajax.get('/api/offers', {}, function(offers) {
+        Ajax.get('api/offers', {}, function(offers) {
             if (!offers.error) {
                 for (var idx in offers) {
                     buildOffer(pizzaGrid, offers[idx]);

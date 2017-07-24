@@ -17,7 +17,7 @@
           password: password.value
         };
 
-        Ajax.post('/api/authenticate', user, function(response) {
+        Ajax.post('api/authenticate', user, function(response) {
           if (response.success == "success") {
             var user = response.user;
 

@@ -43,7 +43,7 @@
                 price: (price.innerHTML)
             };
 
-            Ajax.post('/api/orders', order, function(res) {
+            Ajax.post('api/orders', order, function(res) {
               if(res.success) {
                 window.location.assign('ordercreated');
               } else {
