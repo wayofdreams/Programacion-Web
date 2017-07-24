@@ -30,6 +30,7 @@ function reviewOrders(err, orders) {
             console.log(err);
           } else {
             // send mail
+            Mailer.sendDeliveredMail(order);
           }
         });
       }

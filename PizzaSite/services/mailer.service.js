@@ -12,10 +12,10 @@ module.exports = function() {
     }
   });
 
-  function sendDeliveredMail(user, order) {
+  function sendDeliveredMail(order) {
     var params = {
       from: 'rafas.pizzas.webapp@gmail.com',
-      to: user.email,
+      to: order.email,
       subject: 'Your Pizza was delivered!',
       text: 'Your ' + order.pizza.title + ' was delivered'
     };
