@@ -1,22 +1,19 @@
 {
-  "name": "PizzaApp",
+  "name": "pizzasite",
   "version": "1.0.0",
-  "description": "Web Programming Final Project",
+  "description": "",
   "main": "pizzapp.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Rafael Contreras",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.2",
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap": "^3.3.7",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
     "mongodb": "^2.2.30",
-    "mongoose": "^4.11.1",
+    "mongoose": "^4.11.4",
     "nodemailer": "^4.0.1"
   }
 }
