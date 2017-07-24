@@ -11,9 +11,9 @@ const SALT_ROUNDS   = 10;
 const APIModule     = require(__dirname + '/api/api.module');
 const routes        = require(__dirname + '/components/app.routes');
 
-const app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
+const pizzapp = express();
+pizzapp.use(bodyParser.json());
+pizzapp.use(bodyParser.urlencoded({
     extended: true
 }));
 var hbs = exphbs.create({
@@ -23,17 +23,17 @@ var hbs = exphbs.create({
   helpers: helpers,
 });
 
-app.use("/static",express.static(__dirname + "/public"));
-app.use('/vendors', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
+pizzapp.use("/static",express.static(__dirname + "/public"));
+pizzapp.use('/vendors', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
+pizzapp.engine('handlebars', hbs.engine);
+pizzapp.set('view engine', 'handlebars');
 
-APIModule(app);
+APIModule(pizzapp);
 
-app.get('/', function (req, res) {
+pizzapp.get('/', function (req, res) {
     res.redirect('/pizza');
 });
 
-app.use('/', routes);
+pizzapp.use('/', routes);
 
-app.listen(5884);
+pizzapp.listen(5884);
