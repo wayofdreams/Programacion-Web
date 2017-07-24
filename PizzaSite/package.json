@@ -2,7 +2,7 @@
   "name": "PizzaApp",
   "version": "1.0.0",
   "description": "Web Programming Final Project",
-  "main": "app.js",
+  "main": "pizzapp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
