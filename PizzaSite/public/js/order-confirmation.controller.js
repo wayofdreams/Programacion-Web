@@ -45,16 +45,16 @@
 
             Ajax.post('/api/orders', order, function(res) {
               if(res.success) {
-                window.location.assign('/ordercreated');
+                window.location.assign('ordercreated');
               } else {
-                window.location.assign('/login');
+                window.location.assign('login');
               }
             });
         }
 
         function cancelOrder() {
             console.log('cancel order');
-            location.assign('/');
+            location.assign('');
         }
 
     });

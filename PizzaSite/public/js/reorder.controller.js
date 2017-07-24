@@ -2,7 +2,7 @@
     'use strict';
     var email = localStorage.getItem('email');
     if (!email) {
-        window.location.assign('/login');
+        window.location.assign('login');
     }
 
     document.addEventListener("DOMContentLoaded", function(event) {

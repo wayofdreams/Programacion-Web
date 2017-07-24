@@ -23,10 +23,10 @@
       localStorage.removeItem('email');
       localStorage.removeItem('userId');
       localStorage.removeItem('name');
-      
+
       loginLink.classList.remove("hide");
       helloMessage.className = "hide";
-      location.assign('/');
+      location.assign('');
     }
 
     function isUserLogged(){

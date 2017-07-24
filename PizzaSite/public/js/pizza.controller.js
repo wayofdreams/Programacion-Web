@@ -2,8 +2,6 @@
     'use strict';
 
     document.addEventListener("DOMContentLoaded", function(event) {
-        // TODO: Remove this
-        console.log("PizzaController Ready!");
 
         var pizzaGrid = document.getElementById('pizza-grid');
         Ajax.get('/api/offers', {}, function(offers) {
