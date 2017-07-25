@@ -62,7 +62,7 @@ module.exports = function APIController() {
     }
 
     function signUp(req, res) {
-
+        console.log(req.body);
         var password = req.body.password;
 
         bcrypt.hash(password, SALT_ROUNDS, function(err, hash) {
