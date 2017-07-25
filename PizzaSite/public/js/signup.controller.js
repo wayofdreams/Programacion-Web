@@ -26,15 +26,16 @@
 
 
             Ajax.post('api/signup', newUser, function(response) {
-                if (response.ok) {
-                    var user = response.user;
+                if (response._id) {
+
+                    var user = response;
 
                     localStorage.setItem('userId', user._id);
                     localStorage.setItem('name', user.name);
                     localStorage.setItem('email', user.email);
                     localStorage.setItem('authorization', user.authorization);
 
-                    window.location.assign('');
+                    window.location.assign('pizza');
                 } else {
                     return false;
                 }

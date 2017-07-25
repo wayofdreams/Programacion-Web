@@ -38,6 +38,7 @@ function getUser(user, db, callback) {
 
 function addUser(user, db, callback) {
     db.collection(USER).insertOne(user, function(err, result) {
+        result.user = result.ops[0];
         callback(err, result);
     });
 }

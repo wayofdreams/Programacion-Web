@@ -62,7 +62,6 @@ module.exports = function APIController() {
     }
 
     function signUp(req, res) {
-        console.log(req.body);
         var password = req.body.password;
 
         bcrypt.hash(password, SALT_ROUNDS, function(err, hash) {
@@ -73,7 +72,14 @@ module.exports = function APIController() {
             };
 
             DBHelper.addUser(user, function(err, data) {
-                _handleDbHelperResponse(res, err, data);
+              //
+              // //  console.log(data.user);
+              //   var x = {
+              //     ok: 'ok',
+              //     user: data.user
+              //   }
+                _handleDbHelperResponse(res, err, data.user);
+
             });
         });
     }
