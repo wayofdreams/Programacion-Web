@@ -26,7 +26,7 @@
 
       loginLink.classList.remove("hide");
       helloMessage.className = "hide";
-      location.assign('');
+      location.assign('pizza');
     }
 
     function isUserLogged(){

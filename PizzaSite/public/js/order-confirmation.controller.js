@@ -54,7 +54,7 @@
 
         function cancelOrder() {
             console.log('cancel order');
-            location.assign('');
+            location.assign('pizza');
         }
 
     });
