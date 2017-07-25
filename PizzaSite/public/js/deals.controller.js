@@ -3,8 +3,6 @@
   'use strict';
 
   document.addEventListener("DOMContentLoaded", function(event) {
-    // TODO: Remove this
-    console.log("Deals Controller loaded!");
     var grid = document.getElementById('deals-grid');
     Ajax.get('api/offers', {}, function(offers) {
         if (!offers.error) {
@@ -23,7 +21,7 @@
         var span = document.createElement('span');
 
         form.setAttribute('method', 'POST');
-        form.setAttribute('action', '/orderconfirmation');
+        form.setAttribute('action', 'orderconfirmation');
 
         card.className = "col-sm-6 col-md-4";
         thumbnail.className = 'thumbnail';
