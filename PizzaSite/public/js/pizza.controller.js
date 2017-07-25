@@ -20,7 +20,7 @@
             var form = document.createElement('form');
 
             form.setAttribute('method', 'POST');
-            form.setAttribute('action', '/orderconfirmation');
+            form.setAttribute('action', 'orderconfirmation');
 
             card.className = "col-sm-6 col-md-4";
             thumbnail.className = 'thumbnail';
