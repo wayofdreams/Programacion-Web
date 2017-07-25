@@ -26,7 +26,7 @@
 
 
             Ajax.post('api/signup', newUser, function(response) {
-                if (response.success == "success") {
+                if (response.ok) {
                     var user = response.user;
 
                     localStorage.setItem('userId', user._id);
@@ -36,7 +36,6 @@
 
                     window.location.assign('');
                 } else {
-
                     return false;
                 }
             });
