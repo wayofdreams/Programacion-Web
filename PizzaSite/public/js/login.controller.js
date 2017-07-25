@@ -25,7 +25,8 @@
             localStorage.setItem('name', user.name);
             localStorage.setItem('email', user.email);
             localStorage.setItem('authorization', user.authorization);
-            window.location.assign('');
+            
+            window.location.assign('pizza');
           } else {
             Ajax.removeAuthrization();
             return false;

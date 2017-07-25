@@ -72,13 +72,17 @@ module.exports = function APIController() {
             };
 
             DBHelper.addUser(user, function(err, data) {
-              //
-              // //  console.log(data.user);
-              //   var x = {
-              //     ok: 'ok',
-              //     user: data.user
-              //   }
-                _handleDbHelperResponse(res, err, data.user);
+              var token = token = user.email + ':' + user.password;
+              var hash = new Buffer(token).toString('base64');
+              user._id = data.ops[0]._id;
+
+              var resu = {
+                name: user.name,
+                email: user.email,
+                authorization: hash,
+                _id: data.user._id
+              };
+                _handleDbHelperResponse(res, err, resu);
 
             });
         });
